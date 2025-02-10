@@ -12,6 +12,22 @@ For tabular data:
 - The feature that we want our model to predict is called the `target variable`
 - A row is called an `observation` or `feature vector`
 
+### Federated Learning in Machine Learning
+
+Federated Learning (FL) is **not a separate category** of Machine Learning (ML) like Supervised, Unsupervised, or Reinforcement Learning. Instead, **it is a training paradigm** that can be applied to any of these ML types:
+
+1. Supervised Learning – Most common use case  
+- FL is often used for training supervised models where labeled data exists but is distributed across multiple devices (e.g., predicting next-word suggestions in mobile keyboards).  
+- **Example:** Google’s Gboard keyboard trains a supervised learning model across user devices.
+
+2. Unsupervised Learning – Possible but less common  
+- FL can be used for clustering, anomaly detection, or dimensionality reduction without centralized data collection.  
+- **Example:** Federated clustering of IoT sensor data across different smart homes.
+
+3. Reinforcement Learning (RL) – Rare, but possible  
+- FL can be applied in RL scenarios where multiple distributed agents learn policies collectively.  
+- **Example:** Federated RL for autonomous vehicles learning to navigate different environments.
+
 In `supervised machine learning`, a machine learning model learns from, or is trained on, datathat has labels or classes for every observation
 - The labels can be continuous or categorical values
 
