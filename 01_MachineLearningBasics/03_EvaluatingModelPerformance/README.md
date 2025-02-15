@@ -23,6 +23,18 @@ Let's explore these concepts using the K-Nearest Neighbors (KNN) algorithm, focu
 
 In practice, we aim to find the optimal K value that balances between overfitting and underfitting, resulting in a model that generalizes well to new data. This process often involves techniques like cross-validation.
 
+## **Why Models Overfit and How to Address It**
+
+Overfitting happens when a machine learning model learns the training data too well, including its noise and minor details. This results in a model that performs exceptionally on the training data but struggles to generalize to new, unseen data.
+
+![alt text](graph.png)
+
+Minimizing training loss might seem like the ultimate goal, but it’s not the whole story. As the training loss decreases, the validation loss often starts to rise after a certain point. This trend indicates that the model is becoming too complex, capturing not only the underlying patterns but also the noise in the training data. As a result, it struggles to generalize to new data.
+
+On the other hand, in the high-bias region of the graph, the model is too simple to capture the data's complexity. This results in high training and validation losses that are very similar, indicating underfitting. While there’s no gap between the two losses, the overall performance remains poor because the model is unable to learn the underlying patterns in the data.
+
+Preventing overfitting is critical for building machine learning models that perform well on unseen data.
+
 ## Sample code
 
 This code demonstrates how different values of K affect the model's performance:
